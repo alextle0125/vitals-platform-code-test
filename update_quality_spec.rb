@@ -180,7 +180,7 @@ describe '#update_quality' do
         let(:name) { 'Blue Star' }
         
         before do
-          award.expires_in.should == initial_expires_in-1
+          expect(award.expires_in.should == initial_expires_in-1)
         end
 
         context 'before the expiration date' do
